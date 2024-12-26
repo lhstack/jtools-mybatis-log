@@ -9,4 +9,8 @@
 2. 您只需要安装它，它就会为您完成提取sql和拼接参数的工作。
 3. 我觉得这个插件可以帮你解决很多问题，你会喜欢这个插件的。
 
+## 如果遇到项目在debug下无法启动的问题，请设置Disable launch optimization
+`If you encounter the problem that the project cannot start under debug, set Disable launch optimization`
+![2.png](./images/2.png)
+
 ![1.png](./images/1.png)
