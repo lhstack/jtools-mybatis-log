@@ -36,15 +36,8 @@ class MybatisLogJavaProgramPatcher : JavaProgramPatcher() {
         } catch (ignore: Throwable) {
 
         }
-        val supportClasses = """
-            org.apache.ibatis.session.Configuration
-            com.baomidou.mybatisplus.core.MybatisConfiguration
-        """.trimIndent()
-        parameters.vmParametersList.add("-javaagent:${System.getProperty("user.home")}/.jtools/jtools-mybatis-log/agent.jar=Mysql=${
-            supportClasses.split(
-                "\n"
-            ).joinToString(",") { it.trim() }
-        }"
+        parameters.vmParametersList.add(
+            "-javaagent:${System.getProperty("user.home")}/.jtools/jtools-mybatis-log/agent.jar"
         )
     }
 }
